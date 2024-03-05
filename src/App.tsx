@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Box, Button, ButtonContainer, Headline, Image, Text} from "./components/Box";
+import imgCard from "./assets/images/img.png"
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Box>
+                <Image src ={imgCard}/>
+                <Headline> Headline </Headline>
+                <Text>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</Text>
+                <ButtonContainer>
+                    <Button btnType={"primary"}>See more</Button>
+                    <Button btnType={"outlined"}>Save</Button>
+                </ButtonContainer>
+            </Box>
+        </div>
+    );
 }
 
 export default App;
